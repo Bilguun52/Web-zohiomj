@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Нүүр хуудас</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css">
+    <style>
+        body{
+            
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height:100px;
+            width: 100%;
+     
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            width: 100%;
+            border-bottom: 1px solid black
+        }
+        .logo{
+            width: 220px;
+        }
+        .search{
+            width: 830px;
+            height: 45px;
+            
+        }
+        .search-main{
+            height: 45px;
+            width: 100%;
+        }
+        .search-main .form{
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0px;
+            border-radius: 3px;
+            background: rgb(243, 243, 243);
+        }
+        
+        .navbar{
+            width: 100%;
+            height: 30px;
+        }
+        .navbar-main{
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 100%;
+        }
+        .navbar-list{
+            padding: 0;
+            margin: 20px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            height: 100%;
+            margin: 0 20px 0 20px;
+        }
+        .user{
+            height: 70px;
+            width: 210px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .menu-user{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+        }
+        .user-icon{
+            width: 26px;
+        }
+        .menu-bracket{
+
+        }
+        .bracket-icon{
+            width: 36px;
+        }
+        .user-text img{
+            width: 12px;
+        }
+        .slider-home{
+            height: 300px;
+            width: 100%;
+            
+        }
+        img{
+                width: 100%;
+            }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .section-slide{
+            height: 392px;
+            width: 100%;
+        }
+        .main{
+            height: 1500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-collect{
+            height: 300px;
+            width: 1280px;
+        }
+        .collect-title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 20px;
+            margin: 25px 0 25px 0;
+        }
+        .collect-main{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .collect-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+        }
+        .item-img img{
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+        .prod-name{
+            font-size: 20px;
+            margin: 10px;
+        }
+        .prod{
+            height: 450px;
+            width: 1280px;
+            margin-top: 30px;
+        }
+        .prod-main{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .prod-item{
+            border: 1px solid black;
+            border-top: none;
+            border-left: none;
+            background-color: rgba(245, 245, 220, 0.445);
+            width: 255px;
+            display: flex;
+            
+            flex-direction: column;
+        }
+        .prod-cont{
+            margin: 17px 17px 0 17px;
+            width: 220px;
+        }
+        .prod-img{
+            width: 100%;
+        }
+        .prod-info{
+            display: flex;
+            flex-direction: column;
+        }
+        .prod-info span{
+            margin: 10px 0 10px 0;
+        }
+        footer{
+            height: 220px;
+            width: 100%;
+            background-color: #e4e4e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ft-main{
+            width: 1280px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .ft-info{
+           display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 100px;
+        }
+        .ft-info span{
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="search">
+                <form action="get">
+                    <div class="search-main">
+                        <input type="search" class="form" name="searcher" id="searcher" placeholder="Хайх">
+                    </div>
+                </form>
+            </div>
+            <div class="user">
+                <div class="menu-user">
+                    <div class="user-icon"><img src="images/user-logo.png" alt=""></div>
+                    <div class="user-text"><span>Миний бүртгэл</span><img src="images/up-arrow-yellow.png" alt=""></div>
+                </div>
+                <div class="menu-bracket"><div class="bracket-icon"><img src="images/card.png" alt=""></div></div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar-main">
+                <ul class="navbar-list">
+                    <li><a href="repl">Бүх ангилал</a></li>
+                    <li><a href="repl">Шинэ</a></li>
+                    <li><a href="repl">Хямдрал</a></li>
+                    <li><a href="repl">Коллекцууд</a></li>
+                    <li><a href="repl">Брэндүүд</a></li>
+                    <li><a href="repl">Дэлгүүрүүд</a></li>
+                    <li><a href="repl">Мэдээлэл</a></li>
+                    <li><a href="repl">Блог</a></li>
+                    <li><a href="repl">Холбоо барих</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="section-slide">      
+        <div class="slide-main">
+            <img src="slider/image/im1.webp" alt="">
+            <!-- <img src="slider/image/im2.webp" alt=""> -->
+        </div>
+        <div class="dots"></div>
+    </section>
+    <main>
+        <div class="main">
+            <div class="section-collect">
+                <div class="collect-title"><span style="font-weight: bold;">Онцлох бараанууд</span><span><a href="repl" style="font-weight:bolder;">Цааш</a></span></div>
+                <div class="collect-main">
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-1.png" alt=""></div><span class="prod-name"><a>Цамц</a></span></div>
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-2.webp" alt=""></div><span class="prod-name"><a>Угаалгын машин</a></span></div>
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-3.webp" alt=""></div><span class="prod-name"><a>Канон</a></span></div>
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-4.webp" alt=""></div><span class="prod-name"><a>Гутал</a></span></div>
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-5.webp" alt=""></div><span class="prod-name"><a>Тоос сорогч</a></span></div>
+                    <div class="collect-item"><div class="item-img"><img src="product/image/prod-6.webp" alt=""></div><span class="prod-name"><a>Коффений машин</a></span></div>
+                </div>
+            </div>
+            <div class="prod">
+                <div class="prod-main">
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-7.webp" alt=""></div><span class="prod-info"><span>Код: 117142</span><span>Муурны маажууртай хана</span><span style="margin-top: 20px;">39,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-8.webp" alt=""></div><span class="prod-info"><span>Код: 116097</span><span>Угаалгын машин болон суултуурны дээрх цэгцлэгч тавиур</span><span style="margin-top: 20px;">64,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-9.webp" alt=""></div><span class="prod-info"><span>Код: 121123</span><span>Өргөн даавуун бүстэй куртик</span><span style="margin-top: 20px;">135,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-10.webp" alt=""></div><span class="prod-info"><span>Код: 121120</span><span>Хөндлөн оёдолтой куртик</span><span style="margin-top: 20px;">100,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-11.webp" alt=""></div><span class="prod-info"><span>Код: 121118</span><span>Хэрээстэй нарийн резинэн бүстэй куртик</span><span style="margin-top: 20px;">200,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-11.webp" alt=""></div><span class="prod-info"><span>Код: 121118</span><span>Хэрээстэй нарийн резинэн бүстэй куртик</span><span style="margin-top: 20px;">200,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+                    <div class="prod-item"><div class="prod-cont"><div class="prod-img"><img src="product/image/prod-11.webp" alt=""></div><span class="prod-info"><span>Код: 121118</span><span>Хэрээстэй нарийн резинэн бүстэй куртик</span><span style="margin-top: 20px;">200,000₮</span><span style="margin-bottom: 20px;">1 ширхэг бэлэн байгаа</span></span></div></div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ft-main">
+          
+                <div class="ft-info" style="text-align: left;">© 2022. Market.mn (Bilguun LLC) All Rights Reserved.</div>
+                <div class="ft-info" style="text-align: center;">Биднийг дагаарай</div>
+                <div class="ft-info" style="text-align:;">
+                    <span style="color: orange;">МЭДЭЭЛЭЛ</span>
+                    <span><a href="">Түгээмэл асуулт</a></span> 
+                    <span><a href="">Буцаалтын журам</a></span>
+                    <span><a href="">Захиалга шалгах</a></span>
+                    <span><a href="">Хамтран ажиллах</a></span>
+                    <span><a href="">Холбоо барих</a></span>
+                </div>
+        
+        </div>
+    </footer>
+</body>
+</html>
